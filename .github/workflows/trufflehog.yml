@@ -16,3 +16,6 @@ jobs:
         with:
           path: .
           extra_args: --log-level 2 --no-verification --max-depth=10
+      - name: debug
+        run: |
+          echo ${BASE:-''}
