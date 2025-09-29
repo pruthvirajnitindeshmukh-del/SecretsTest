@@ -15,4 +15,4 @@ jobs:
         uses: trufflesecurity/trufflehog@main
         with:
           path: .
-          extra_args: --log-level 2 --since-commit b6c6c2bfcce65d7f85fa4011b0381f609a6569d5
+          extra_args: --log-level 2
