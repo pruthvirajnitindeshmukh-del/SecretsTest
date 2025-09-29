@@ -1,0 +1,18 @@
+name: TruffleHog Secret Scan
+
+on:
+ workflow_dispatch:
+
+
+jobs:
+  trufflehog:
+    runs-on: [self-hosted, linux, x64, philips-code-hub, ubuntu-latest]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run TruffleHog
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: .
+          extra_args: --log-level 2 --since-commit b6c6c2bfcce65d7f85fa4011b0381f609a6569d5 --branch main
