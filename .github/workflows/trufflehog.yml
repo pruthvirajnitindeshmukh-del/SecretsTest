@@ -15,4 +15,5 @@ jobs:
         uses: trufflesecurity/trufflehog@main
         with:
           path: .
-          extra_args: --log-level 2
+          extra_args: --log-level 2 -h
+         
