@@ -15,7 +15,7 @@ jobs:
         uses: trufflesecurity/trufflehog@main
         with:
           path: .
-          extra_args: --log-level 2 --no-verification --max-depth=10 --no-fail
+          extra_args: --log-level 2 --no-verification --max-depth=10 --fail=false
       - name: debug
         run: |
           echo ${BASE:-''}
