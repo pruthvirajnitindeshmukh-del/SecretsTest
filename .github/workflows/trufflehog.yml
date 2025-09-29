@@ -6,7 +6,7 @@ on:
 
 jobs:
   trufflehog:
-    runs-on: [self-hosted, linux, x64, philips-code-hub, ubuntu-latest]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
