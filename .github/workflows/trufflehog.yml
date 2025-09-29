@@ -13,6 +13,6 @@ jobs:
 
       - name: Run TruffleHog
         run: |
-         docker run --rm -v "$PWD:/pwd" trufflesecurity/trufflehog:latest github-experimental -h \
-         --repo https://github.com/pruthvirajnitindeshmukh-del/SecretsTest.git --object-discovery
+         docker run --rm -v "$PWD:/pwd" trufflesecurity/trufflehog:latest github-experimental \
+         --repo https://github.com/pruthvirajnitindeshmukh-del/SecretsTest.git --object-discovery --token=${{ GITHUB_TOKEN }}
 
