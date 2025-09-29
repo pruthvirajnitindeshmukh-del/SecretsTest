@@ -15,4 +15,4 @@ jobs:
         uses: trufflesecurity/trufflehog@main
         with:
           path: .
-          extra_args: --log-level 2 --github-actions --no-verification --max-depth=10
+          extra_args: --log-level 2 --no-verification --max-depth=10
